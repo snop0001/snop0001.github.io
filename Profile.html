@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-
+<html>
  <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">
  <link rel="preconnect" href="https://fonts.googleapis.com">
  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -21,30 +21,35 @@
  <body>
     
     <header> 
-      <h1>Profile Shirel Snopik</h1>
+      <h1>Welcome to My Profile!</h1>
+      <hr>
     <nav> 
-      <a  href="index.html">Return to Home Page</a> 
+          <a  href="index.html"> Home Page</a>
+          <a  href="dashboard.html">Dashboard</a>
+          <a  href="faq.html">FAQ</a>
+          <a  href="blog.html">Blog</a>
+          <a  href="post.html">Post</a>
     </nav>
     </header>
+
   <main>
-    <article>
-     <h2>Personal information</h2>
-         <p>  <img class="thick-red-border" title="Me with my Boyfriend" src="couple.jpg" style= "float:left; width: 200px;margin: 10px;">   My name Shirel Snopik I am 23 years old. I come originally from Israel, a very little country in the middle east. 
+    
+     <div class="grid-container"> 
+      
+       <div> <img class="thick-blue-border" title="Me with my Boyfriend" src="/images/Couple.jpg" style= "float:left;"> </div>
+       <div class="profileMain" >
+        <h2>Personal information</h2>
+        <p>  My name Shirel Snopik I am 23 years old. I come originally from Israel, a very little country in the middle east. 
             I speak 3.5 languages, Hebrew, Spanish, English and a bit of Dutch. I moved to the Netherlands to live with my Partner
             of the past 5 and a half years, I am looking forward to become a part of the Netherlands in general and especially its community. 
              I beliver that by studying here and resarching programming a subject that was always close to my heart Ill be able to achive all my goals in this new country.
-        </P>
+         </P>
 
-   </article>
-    
-   <article>
-    <H2>Pre-education and subjects followed during previous education: </H2>
+      <H2>Pre-education and subjects followed during previous education: </H2>
         <p> 6 years of Primary school and 6 of high school (among them 3 that included finals).
           Followed level 5 (the highest) of English and math. Choose 10 units of computer science and 5 units of physics.</p>
-   </article>
-    
-   <article>
-    <h2>Extra-curricular activities</h2>
+   
+      <h2>Extra-curricular activities</h2>
        <H3>Do you work/are you planning to work alongside your studies? What do you do in your spare time? How do you think 
         you can combine this with studying? </H3>
         <ul>
@@ -54,10 +59,11 @@
           <li>Gaming</li>
           <li>Traveling</li>
         </ul>
-    </article>
-  </main>
       </div>
-        <img  src="/images/Picture1.png" alt="Pretty flowers">
-       
+    </div>
+  </main>
+  <footer> 
+        <img style="float: right;" src="/images/Picture1.png" alt="Pretty flowers">
+  </footer>
   </body>
 </html>

@@ -4,20 +4,51 @@
 }
 
 header {
-  background-color: rgb(255, 251, 240);
+  background-color: rgb(73, 139, 226);
   margin: 0px;
   padding:0px;
-
+  height: 100px;
+  text-align: center;
 }
-#navigation {
-  float:right; 
-  background-color: rgb(255, 251, 240);}
+
+nav {
+  width: 100%;
+  height: 30px;
+  background-color: rgba(134, 171, 219, 0.123);
+  align-items:center;
+  border-style: double;
+  border-width: 5px;
+  border-color: whitesmoke;
+}
+a:hover {
+  background-color: rgb(153, 214, 233);
+  color: white;
+}
+a { margin-right: 20px;
+  margin-left: 20px;
+  text-decoration: none;
+  font-family:Lobster;
+  font-size:20px;
+  
+}
+
+ main {
+   background-color: rgb(240, 246, 255);
+   height: 500px;
+ }
+
+ footer { 
+   background-color: white;
+   height: 100px;
+ }
 
 h1{
+  text-align: center;
   font-family:Lobster;
-  font-size: xx-large;
+  font-size: 50px;
   color:rgb(66, 22, 168)
 }
+ 
 
 h2{
   font-family:'Zen Loop', cursive;
@@ -39,12 +70,28 @@ p{
 li{
   font-family: 'Uchen', serif; 
   font-size: medium;
-  color:rgb(20, 33, 228);
+  color:rgb(14, 15, 78);
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 30% auto;
+  grid-gap: 10px;
+  padding: 10px;
+}
+
+.grid-container > div {
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+}
+.profileMain {
+  text-align: left !important;
 }
 
 .cream-background{background-color: beige;}
 
-.thick-red-border {
+.thick-blue-border {
     border-color: rgb(75, 130, 231);
     border-width: 10px;
     border-style:groove;
