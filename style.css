@@ -1,50 +1,55 @@
+*{
+  margin: 0px;
+  padding:0px;
+}
 
-<link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Zen+Loop&display=swap" rel="stylesheet">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Uchen&display=swap" rel="stylesheet">
-<html lang="en">
+header {
+  background-color: rgb(255, 251, 240);
+  margin: 0px;
+  padding:0px;
 
+}
+#navigation {
+  float:right; 
+  background-color: rgb(255, 251, 240);}
 
 h1{
   font-family:Lobster;
   font-size: xx-large;
-  color:crimson
+  color:rgb(66, 22, 168)
 }
 
 h2{
   font-family:'Zen Loop', cursive;
   font-size: large;
-  color:rgb(212, 18, 93)
+  color:dodgerblue
 }
 
 h3{
   font-family:'Zen Loop', cursive;
   font-size: medium;
-  color:rgb(230, 47, 108)
+  color:rgb(63, 65, 223)
 }
 
 p{
   font-family: 'Uchen', serif;
   font-size: medium;
-  color:rgb(8, 8, 8);
+  color:rgb(14, 15, 78);
 }
 li{
   font-family: 'Uchen', serif; 
   font-size: medium;
-  color:rgb(8, 8, 8);
+  color:rgb(20, 33, 228);
 }
 
 .cream-background{background-color: beige;}
 
 .thick-red-border {
-    border-color: rgb(230, 115, 140);
+    border-color: rgb(75, 130, 231);
     border-width: 10px;
     border-style:groove;
     border-radius: 10px;
     width: 300px;
     border-radius:50%;
 } 
+
