@@ -4,38 +4,64 @@
 }
 
 header {
-  background-color: rgb(73, 139, 226);
+  background-color: rgb(6, 47, 85);
   margin: 0px;
   padding:0px;
-  height: 100px;
+  width:100%;
+  height: 70px;
   text-align: center;
-}
-
-nav {
+  position: fixed;
+  overflow: auto;
   width: 100%;
-  height: 30px;
-  background-color: rgba(134, 171, 219, 0.123);
-  align-items:center;
-  border-style: double;
-  border-width: 5px;
-  border-color: whitesmoke;
-}
-a:hover {
-  background-color: rgb(153, 214, 233);
-  color: white;
-}
-a { margin-right: 20px;
-  margin-left: 20px;
-  text-decoration: none;
-  font-family:Lobster;
-  font-size:20px;
   
 }
 
- main {
-   background-color: rgb(240, 246, 255);
-   height: 500px;
+
+.link-list{
+  list-style-type:none;
+  margin:0;
+  margin-top: 4.5%;
+  padding:0;
+  overflow: hidden;
+  background-color: rgba(221, 226, 230, 0.918);
+  position: fixed;
+ overflow: auto;
+ width: 100%;
+ border-bottom:1px solid #555;
  }
+
+ .link-list li{
+  float:left;
+  text-align: center;
+ 
+  
+ }
+ 
+.link-list li a { 
+  display:block;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-family:Lobster;
+  font-size:20px;
+
+}
+
+.link-list a:hover {
+  background-color: rgb(38, 122, 148);
+  color: white;
+}
+
+.active{
+  background-color:rgb(21, 44, 58);
+  color:whitesmoke;
+}
+
+
+main {
+  background-color: rgb(240, 246, 255);
+  height: 500px;
+}
 
  footer { 
    background-color: white;
@@ -46,7 +72,7 @@ h1{
   text-align: center;
   font-family:Lobster;
   font-size: 50px;
-  color:rgb(66, 22, 168)
+  color:rgb(204, 208, 212)
 }
  
 
@@ -64,11 +90,6 @@ h3{
 
 p{
   font-family: 'Uchen', serif;
-  font-size: medium;
-  color:rgb(14, 15, 78);
-}
-li{
-  font-family: 'Uchen', serif; 
   font-size: medium;
   color:rgb(14, 15, 78);
 }
