@@ -3,38 +3,50 @@
   padding:0px;
 }
 
+
+/*Header and navigation*/
+
 header {
   background-color: rgb(6, 47, 85);
   margin: 0px;
   padding:0px;
   width:100%;
-  height: 70px;
-  text-align: center;
+  height: 100px;
+  text-align:center;
   position: fixed;
-  overflow: auto;
+  overflow: hidden;
   width: 100%;
   
+}
+
+.grid-Header {
+  display: grid;
+  grid-template-columns: 80% 20%;
+  grid-gap: 10px;
+  padding: 10px;
+}
+
+.grid-Header > div {
+  text-align: center;
+  font-size: 30px;
 }
 
 
 .link-list{
   list-style-type:none;
   margin:0;
-  margin-top: 4.5%;
+  margin-top: 6.5%;
   padding:0;
-  overflow: hidden;
   background-color: rgba(221, 226, 230, 0.918);
   position: fixed;
- overflow: auto;
- width: 100%;
- border-bottom:1px solid #555;
+  overflow: auto;
+  width: 100%;
+  border-bottom:1px solid #555;
  }
 
  .link-list li{
   float:left;
   text-align: center;
- 
-  
  }
  
 .link-list li a { 
@@ -42,9 +54,10 @@ header {
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
-  font-family:Lobster;
+  font-family:Arial, Helvetica, sans-serif;
   font-size:20px;
-
+  color:rgb(6, 47, 85);
+ 
 }
 
 .link-list a:hover {
@@ -52,24 +65,22 @@ header {
   color: white;
 }
 
-.active{
+.active {
   background-color:rgb(21, 44, 58);
-  color:whitesmoke;
+  color:whitesmoke !important; 
 }
 
 
-main {
-  background-color: rgb(240, 246, 255);
-  height: 500px;
+/*center of page*/
+body{
+  background-color:rgb(227, 237, 243);
 }
 
- footer { 
-   background-color: white;
-   height: 100px;
- }
 
+
+/*General elements*/
 h1{
-  text-align: center;
+  text-align: Left;
   font-family:Lobster;
   font-size: 50px;
   color:rgb(204, 208, 212)
@@ -77,26 +88,29 @@ h1{
  
 
 h2{
-  font-family:'Zen Loop', cursive;
-  font-size: large;
-  color:dodgerblue
+  font-family:Arial, Helvetica, sans-serif;
+  font-size: 25px;
+  color:rgb(16, 74, 150)
 }
 
 h3{
-  font-family:'Zen Loop', cursive;
-  font-size: medium;
-  color:rgb(63, 65, 223)
+  font-family:Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  color:rgb(29, 70, 117)
 }
 
 p{
   font-family: 'Uchen', serif;
-  font-size: medium;
+  font-size: 16px;
   color:rgb(14, 15, 78);
 }
 
+
+
+/*Profile elements*/
 .grid-container {
   display: grid;
-  grid-template-columns: 30% auto;
+  grid-template-columns: auto auto;
   grid-gap: 10px;
   padding: 10px;
 }
@@ -110,14 +124,115 @@ p{
   text-align: left !important;
 }
 
-.cream-background{background-color: beige;}
-
 .thick-blue-border {
-    border-color: rgb(75, 130, 231);
-    border-width: 10px;
-    border-style:groove;
-    border-radius: 10px;
-    width: 300px;
-    border-radius:50%;
+  border-color:transparent;
+  border-width: 10px;
+  border-style:groove;
+  border-radius: 40px;
+  width: 400px;
+  height: auto;
+  
 } 
+
+
+
+/*footer area*/
+
+footer{
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  
+}
+
+.footer-Menu {
+  list-style-type:none;
+  margin:0;
+  padding:0;
+ width: 100%;
+ background-color: rgb(6, 47, 85);
+ 
+}
+
+.footer-Menu li{
+  float:left;
+  text-align: center;
+  
+ }
+
+.footer-Menu li a { 
+  display:block;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-family:Arial, Helvetica, sans-serif;
+  font-size:20px;
+  color: rgb(204, 208, 212);
+  
+}
+
+.footer-Menu a:hover {
+  background-color: rgb(38, 122, 148);
+  color: white;
+}
+
+
+/* Blog Area + Post */
+
+.Blog-Post-Header {
+  background-color: rgb(6, 47, 85);
+  margin: 0px;
+  padding:0px;
+  width:100%;
+  height: 100px;
+  text-align:center;
+  position: fixed;
+  overflow: hidden;
+  width: 100%;
+ 
+}
+
+h1.Blog-Pos {
+  text-align: left;
+  font-family:Lobster;
+  font-size: 50px;
+  color:rgb(238, 238, 234)
+}
+
+h2.Blog-Pos {
+  font-family:Arial, Helvetica, sans-serif;
+  font-size: 28px;
+  color:rgb(13, 32, 51)
+}
+
+h3.Blog-Pos {
+  font-family:Arial, Helvetica, sans-serif;
+  font-size: 25px;
+  color:rgb(13, 32, 51)
+}
+
+p.Blog-Pos {
+  font-family:Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  color:rgb(14, 15, 78);
+  margin:auto;
+}
+
+.Blog-Pos li{
+  font-family:Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  color:rgb(14, 15, 78);
+  margin:auto;
+  margin-left:2%;
+
+}
+
+
+.Read-Me {
+  font-family:Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  color:rgb(24, 27, 173);
+
+}
+
 
