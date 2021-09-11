@@ -7,9 +7,7 @@
 /*Header and navigation*/
 
 header {
-  background-color: rgb(6, 47, 85);
-  margin: 0px;
-  padding:0px;
+  background-color: #F9FAF4;
   width:100%;
   height: 100px;
   text-align:center;
@@ -32,16 +30,18 @@ header {
 }
 
 
+/*#4A6163*/
+
+
 .link-list{
   list-style-type:none;
-  margin:0;
   margin-top: 6.5%;
-  padding:0;
-  background-color: rgba(221, 226, 230, 0.918);
+  background-color: #4a6163;
   position: fixed;
   overflow: auto;
   width: 100%;
-  border-bottom:1px solid #555;
+  
+
  }
 
  .link-list li{
@@ -55,25 +55,32 @@ header {
   padding: 14px 16px;
   text-decoration: none;
   font-family:Arial, Helvetica, sans-serif;
+  font-weight: bold;
   font-size:20px;
-  color:rgb(6, 47, 85);
- 
+  color:#F9FAF4;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  margin-top: 5%;
+  width:110px;
+  height:20px;
 }
 
 .link-list a:hover {
-  background-color: rgb(38, 122, 148);
-  color: white;
+  background-color: #f1f1ec;
+  color: rgb(6, 47, 85);
+  padding-bottom: 20% !important;
 }
 
 .active {
-  background-color:rgb(21, 44, 58);
-  color:whitesmoke !important; 
+  background-color:#F9FAF4;
+  color:#F17A7E !important; 
+  padding-bottom: 20% !important;
 }
 
 
 /*center of page*/
 body{
-  background-color:rgb(204, 227, 238);
+  background-color:#F9FAF4;
 }
 
 main{
@@ -85,20 +92,21 @@ h1{
   text-align: Left;
   font-family:Lobster;
   font-size: 50px;
-  color:rgb(204, 208, 212)
-}
+  color: #F9A66C;
  
+}
+
 
 h2{
   font-family:Arial, Helvetica, sans-serif;
   font-size: 22px;
-  color:rgb(16, 74, 150)
+  color:#F17A7E;
 }
 
 h3{
   font-family:Arial, Helvetica, sans-serif;
   font-size: 20px;
-  color:rgb(29, 70, 117)
+  color:#FFC94B;
 }
 
 p{
@@ -157,7 +165,7 @@ footer{
   margin:0;
   padding:0;
  width: 100%;
- background-color: rgb(6, 47, 85);
+ background-color: #4a6163;
  float:left;
  
 }
@@ -174,14 +182,15 @@ footer{
   padding: 14px 16px;
   text-decoration: none;
   font-family:Arial, Helvetica, sans-serif;
-  font-size:20px;
-  color: rgb(204, 208, 212);
+  font-size:18px;
+  color: #F9FAF4;
+  font-weight: bold;
   
 }
 
 .footer-Menu a:hover {
-  background-color: rgb(38, 122, 148);
-  color: white;
+  background-color: #F9FAF4;
+  color: rgb(6, 47, 85);
 }
 
 
@@ -206,6 +215,8 @@ h1.Blog-Pos {
   font-size: 50px;
   color:rgb(238, 238, 234)
 }
+
+
 
 h2.Blog-Pos {
   font-family:Arial, Helvetica, sans-serif;
@@ -243,12 +254,78 @@ p.Blog-Pos {
 
 }
 
+/*Dashboard*/
+
+table.dashboard-table-quartile {
+  border-collapse:collapse;
+  margin: 50px 0;
+  box-shadow: 0 0 30px #F17A7E;
+  border-radius: 25px;
+  overflow:hidden;
+  background-color: #F17A7E;
+}
+
+
+.dashboard-table-quartile th,
+.dashboard-table-quartile td {
+    padding: 12px 20px;
+    width: 25% ;
+}
+
+.dashboard-table-quartile thead tr {
+  background-color: #FFC94B;
+  color: #F9FAF4;
+  text-align: Center;
+  font-size: 24px;
+  font-family: Lobster;
+}
+
+.dashboard-header-table {
+  background-color: #F17A7E;
+  font-size: 40px;
+  color:#F9FAF4;
+  font-weight: bold;
+  font-family: Lobster;
+  text-align: Center;
+}
+
+.dashboard-table-quartile tbody th {
+  background-color: #F9FAF4;
+  color: #0a0a0a;
+  text-align: Center;
+  font-size: 18px;
+  border-right: 1px solid #FFC94B;
+  font-family: sans-serif;
+}
+
+/* Progress Bar*/
+/* Ideas to add - automatically change color with javascript according to num of credits, maybe add animation or sliding bar*/
+
+#credits {
+  height:24px;
+  width: 1000px;
+}
+
+#bar {
+  font-family:Arial, Helvetica, sans-serif;
+  font-size: 22px;
+  color:#F17A7E;
+}
+
+/* FAQ Page*/
 
 .summary{
   font-family:Arial, Helvetica, sans-serif;
   font-size: 22px;
-  color:rgb(16, 74, 150)
- 
+  text-align:center;
+  color:#F9FAF4;
+  background-color: #FFC94B ;
+  border-radius: 10%;
+  box-shadow: 0 0 30px #FFC94B;
+  height: 50px;
+  padding: 5% 5% 3% 5%;
+  font-weight: bold;
+  
 }
 
 
@@ -256,9 +333,43 @@ p.Blog-Pos {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 18px;
   color:rgb(14, 15, 78);
+  padding:1% 10% 5% 10%;
+  background-color: #f8e751 ;
+  border-radius: 10%;
+  box-shadow: 0 0 30px #FFC94B;
+  font-weight: lighter;
   
-  padding:1% 2% 1% 2%;
-  background-color: aliceblue;
-  border:black;
-  border: solid 1px black;
+ 
+}
+
+.grid-faq {
+  display: grid;
+  grid-gap: 50px;
+  padding-top: 2%;
+}
+
+.grid-faq > div {
+  text-align: center;
+  margin: 0 0 10% 0;
+  font-size: 30px;
+}
+
+.item1 {
+  grid-area: 1 / 1 ;
+}
+
+.item2 {
+  grid-area: 2 / 2 ;
+}
+
+.item3 {
+  grid-area: 3 / 1 ;
+}
+
+.item4 {
+  grid-area: 4 / 2 ;
+}
+
+.item5 {
+  grid-area: 5 / 1 ;
 }
