@@ -418,12 +418,13 @@ table.dashboard-table-quartile {
   text-align: Center;
 }
 
-.dashboard-table-quartile tbody th {
+.dashboard-table-quartile tbody td {
   background-color: #F9FAF4;
   color: #0a0a0a;
   text-align: Center;
   font-size: 18px;
   border-right: 1px solid #FFC94B;
+  border-bottom: 1px solid #FFC94B;
   font-family: sans-serif;
 }
 
