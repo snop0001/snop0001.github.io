@@ -12,15 +12,14 @@ header {
   text-align:center;
   position: fixed;
   overflow: hidden;
-  width: 100%;
-  
+  width: 100%; 
 }
 
 .grid-Header {
   display: grid;
   grid-template-columns: 90% 10%;
   grid-gap: 10px;
-  padding-top: 10px;
+  padding:10px 10px 0px 20px;
 }
 
 .grid-Header > div {
@@ -36,7 +35,6 @@ header {
   height: 80px;
   width: auto;
   padding:5px 10px ;
-  
 }
 
 .nav-list{
@@ -194,8 +192,7 @@ h1.home{
 .grid-home-page {
   display: grid;
   grid-template-columns: auto 45% auto ;
-  grid-gap: 5px ;
-  
+  grid-gap: 5px ; 
 }
 
 .grid-home-page > div {
@@ -262,6 +259,16 @@ h1.home{
   grid-area: 2 / 2  ;
   justify-items:  center;
   align-items: center;
+}
+
+.old-web{
+  grid-area:3/3;
+}
+#old-web {
+   font-family: Arial, Helvetica, sans-serif;
+   color:#68a9af;
+   font-size: 18px;
+   text-decoration: none;
 }
 
 
@@ -638,18 +645,36 @@ p.blog-pos3 {
 
 
 /*Posts*/
-
-.blog-post-header {
+ #post-header{
   background-color: #68a9af;
-  margin: 0px;
-  padding:0px;
   width:100%;
   height: 100px;
   text-align:center;
   position: fixed;
   overflow: hidden;
-  width: 100%;
-  margin-top: 0px;
+
+ }
+
+.grid-Header-posts {
+  display: grid;
+  grid-template-columns: 90% 10%;
+  grid-gap: 10px;
+  padding:10px 10px 0px 20px;
+}
+
+.grid-Header-posts > div {
+  text-align: center;
+  font-size: 30px;
+}
+
+.hz-logo2{
+  grid-area: 1/2 ;
+}
+
+#hz-logo2{
+  height: 80px;
+  width: auto;
+  padding:5px 10px 0px 10px ;
 }
 
 h1.blog-post{
@@ -715,8 +740,6 @@ p.blog-post {
   padding-top: 20%;
   }
   
-
-
 .grid-ict2 {
   display: grid;
   grid-template-columns: 55% 20% 25%;
