@@ -28,28 +28,36 @@
       <div class="hz-logo">
         <img id="hz-logo" alt="HZ logo" src="/images/logo.png" >
       </div>
+
+      <div>
+        <nav>
+          <ul class="nav-list">
+            <li> <a href="index.html"> Home Page</a> </li>
+            <li> <a href="profile.html">Profile</a> </li>
+            <li> <a class="active" href="dashboard.html">Dashboard</a></li>
+            <li> <a href="faq.html">FAQ</a></li>
+            <li> <a href="blog.html">Blog</a></li>
+            <li style="float: right;"> <a href="#" onclick="history.go(-1)">Back</a></li>
+          </ul>
+        </nav>
+        
+      </div>
+
     </div>
   </header>
 
-  <nav>
-    <ul class="nav-list">
-      <li> <a href="index.html"> Home Page</a> </li>
-      <li> <a href="profile.html">Profile</a> </li>
-      <li> <a class="active" href="dashboard.html">Dashboard</a></li>
-      <li> <a href="faq.html">FAQ</a></li>
-      <li> <a href="blog.html">Blog</a></li>
-      <li style="float: right;"> <a href="#" onclick="history.go(-1)">Back</a></li>
-    </ul>
-  </nav>
+  
 
 
   <main>
    <br> <br>
    <div class="prog-bar">
-  <label id="bar" for="credits"> Number of Credits Obtained: </label>
-  <progress id="credits" value="0" max="70"> </progress>
+  <label id="bar" for="credits"> Number of Credits Obtained: 5 EC</label>
+  <progress id="credits" value="5" max="45" > </progress>
+  <br>
+  <label id="bar2" for="credits" > You must have 45 EC by the end of the year! </label>
    </div>
-
+   <br>
 
     <table class="dashboard-table-quartile">
       <thead>
@@ -61,7 +69,7 @@
             <td>Course</td>
             <td>EC</td>
             <td>Exam</td>
-            <td>Grade</td>
+            <td >Grade</td>
           </tr>
         </thead>
   
@@ -70,21 +78,21 @@
             <td> Programming and Career Orientation</td>
             <td> 2.5</td> 
             <td>Assesment </td>
-            <td> </td>
+            <td class="not-graded" > </td>
           </tr>
   
           <tr>
             <td >Computer Science Basics</td>
             <td >5</td>
             <td>Written Exam</td>
-            <td ></td>
+            <td class="passed" >10</td>
           </tr>
   
           <tr>
             <td>Programming Basics</td>
             <td> 5</td>
             <td>Case Study</td>
-            <td></td>
+            <td class="failed">5</td>
           </tr>
       </tbody>
     </table>
@@ -110,12 +118,12 @@
           <td rowspan="2">Object Oriented Programming</td>
           <td rowspan="2" >10</td>
           <td>Case Study</td>
-          <td> </td>
+          <td class="not-graded"> </td>
         </tr>
 
         <tr>
           <td>Project </td>
-          <td> </td>
+          <td class="not-graded"> </td>
         
         </tr>
       </tbody>
@@ -142,25 +150,25 @@
           <td>Framework Development 1</td>
           <td>5</td>
           <td>Case Study</td>
-          <td> </td>
+          <td class="not-graded"> </td>
         </tr>
 
         <tr> 
           <td rowspan="3">Framework Project 1</td>
           <td rowspan="3">7.5</td>
           <td> Project </td>
-          <td> </td>
+          <td class="not-graded"> </td>
           
         </tr>
 
         <tr>
           <td> Assesment</td>
-          <td> </td>
+          <td class="not-graded"> </td>
         </tr>
 
         <tr>
          <td>Report</td>
-         <td>  </td>
+         <td class="not-graded">  </td>
         </tr>
 
       </tbody>
@@ -178,7 +186,7 @@
           <td>Course</td>
           <td>EC</td>
           <td>Exam</td>
-          <td>Grade</td>
+          <td >Grade</td>
         </tr>
       </thead>
 
@@ -187,17 +195,17 @@
           <td rowspan="3">Framework Project 2</td>
           <td rowspan="3">10</td>
           <td>Portfolio</td>
-          <td> </td>
+          <td class="not-graded"> </td>
         </tr>
 
         <tr>
           <td> Project</td>
-          <td> </td>
+          <td class="not-graded"> </td>
         </tr>
 
         <tr>
          <td>Assessment</td>
-         <td>  </td>
+         <td class="not-graded">  </td>
         </tr>
       </tbody>
     </table>
@@ -223,21 +231,21 @@
           <td>Personal Professional Development</td>
           <td> 12.5</td>
           <td>Portfolio</td>
-          <td>  </td>
+          <td class="not-graded">  </td>
           </tr>
   
           <tr>
             <td>Personality 1</td>
             <td> 1.25</td>
             <td>Portfolio</td>
-            <td>  </td>
+            <td class="not-graded">  </td>
             </tr>
   
             <tr>
               <td>Personality 2</td>
               <td> 1.25</td>
               <td>Portfolio</td>
-              <td>  </td>
+              <td class="not-graded">  </td>
               </tr>
       </tbody>
     </table>

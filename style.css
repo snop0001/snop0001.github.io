@@ -8,7 +8,6 @@
 header {
   background-color: #68a9af;
   width:100%;
-  height: 100px;
   text-align:center;
   position: fixed;
   overflow: hidden;
@@ -18,8 +17,8 @@ header {
 .grid-Header {
   display: grid;
   grid-template-columns: 90% 10%;
-  grid-gap: 10px;
-  padding:10px 10px 0px 20px;
+  grid-template-rows: auto auto;
+  padding:10px 10px 0px 0px;
 }
 
 .grid-Header > div {
@@ -39,7 +38,6 @@ header {
 
 .nav-list{
   list-style-type:none;
-  margin-top: 6.5%;
   background-color: #ddd8a6;
   position: fixed;
   overflow: auto;
@@ -96,26 +94,21 @@ footer{
   position: fixed;
   bottom: 0;
   width: 100%;
+  background-color: #68a9af;
 }
 
 .footer-Menu {
   list-style-type:none;
-  margin:0;
-  padding:0;
- width: 100%;
- background-color: #68a9af;
- float:left;
 }
 
 .footer-Menu li{
   float:left;
-  text-align: center;
  }
 
 .footer-Menu li a { 
   display:block;
   text-align: center;
-  padding: 14px 16px;
+  padding: 10px 8px 10px 15px;
   text-decoration: none;
   font-family:Arial, Helvetica, sans-serif;
   font-size:18px;
@@ -179,13 +172,68 @@ header.home {
   width: 100%;
 }
 
+.grid-home-header {
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: auto auto;
+  padding:10px 10px 0px 0px;
+}
+
+.grid-home-header > div {
+  text-align: center;
+  font-size: 30px;
+}
+
+.nav-list2{
+  list-style-type:none;
+  background-color: #ddd8a6;
+  position: fixed;
+  overflow: auto;
+  width: 100%;
+  grid-area: 2/1/3/3;
+ }
+
+ .nav-list2 li{
+  float:left;
+  text-align: center;
+ }
+ 
+.nav-list2 li a { 
+  display:block;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-family:Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  font-size:20px;
+  color:#F9FAF4;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  margin-top: 5%;
+  width:110px;
+  height:20px;
+}
+
+.nav-list2 a:hover {
+  background-color: #f1f1ec;
+  color: #68a9af;
+  padding-bottom: 20% !important;
+}
+
+.active {
+  background-color:#F9FAF4;
+  color:#68a9af !important; 
+  padding-bottom: 20% !important;
+}
+
+
 h1.home{
     text-align: Center;
     font-family:Lobster;
     font-size: 50px;
     color: #68a9af;
     padding-top:10px;
-
+    grid-area: 1/1/2/3;
 }
 
 /*home page*/ 
@@ -374,6 +422,40 @@ grid: 30% 60%;
 
 /*Dashboard*/
 
+/* Progress Bar*/
+/* Ideas to add - automatically change color with javascript according to num of credits, maybe add animation or sliding bar*/
+
+#credits {
+  height:40px;
+  width: 1000px;
+  text-align: center;
+  color: #000000;
+}
+
+#bar {
+  font-family:Arial, Helvetica, sans-serif;
+  font-size: 22px;
+  color:#000000;
+  padding: 1%;
+}
+
+#bar2 {
+  font-family:Arial, Helvetica, sans-serif;
+  font-size: 22px;
+  color:#aa1515;
+  padding: 1%;
+  float: right;
+}
+
+.prog-bar {
+background-color: #f3ecb1;
+border-radius: 10px;
+border:2px solid #FFC94B;
+}
+
+
+
+
 table.dashboard-table-quartile {
   border-collapse:collapse;
   margin: 50px 0;
@@ -418,26 +500,16 @@ table.dashboard-table-quartile {
   font-family: sans-serif;
 }
 
-
-/* Progress Bar*/
-/* Ideas to add - automatically change color with javascript according to num of credits, maybe add animation or sliding bar*/
-
-#credits {
-  height:24px;
-  width: 1000px;
+.not-graded {
+  background-color: #dbdbd7 !important;
+  
+}
+.passed{
+  background-color: #b1e2a0 !important;
 }
 
-#bar {
-  font-family:Arial, Helvetica, sans-serif;
-  font-size: 22px;
-  color:#000000;
-  padding: 1%;
-}
-
-.prog-bar {
-background-color: #f8e751;
-border-radius: 10px;
-border:2px solid #FFC94B;
+.failed{
+  background-color: #ec5752 !important;
 }
 
 
