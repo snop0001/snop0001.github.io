@@ -3,6 +3,7 @@
   padding:0px;
 }
 
+
 /*Header and navigation*/
 
 header {
@@ -11,18 +12,16 @@ header {
   text-align:center;
   position: fixed;
   overflow: hidden;
-  width: 100%; 
+  padding:10px 10px 0px 0px;
 }
 
 .grid-Header {
   display: grid;
   grid-template-columns: 90% 10%;
   grid-template-rows: auto auto;
-  padding:10px 10px 0px 0px;
 }
 
 .grid-Header > div {
-  text-align: center;
   font-size: 30px;
 }
 
@@ -31,7 +30,7 @@ header {
 }
 
 #hz-logo{
-  height: 80px;
+  height: 60px;
   width: auto;
   padding:5px 10px ;
 }
@@ -82,33 +81,32 @@ header {
 
 body{
   background-color:#F9FAF4;
+  position: relative;
+  min-height: 100vh;
 }
 
 main{
-  padding:11% 2% 3% 2%;
+  padding:11% 2% 2.5rem 2%;
 }
 
 /*footer area*/
 
 footer{
-  position: fixed;
-  bottom: 0;
   width: 100%;
   background-color: #68a9af;
-}
-
-.footer-Menu {
-  list-style-type:none;
+  position:absolute; 
+  bottom: 0;
 }
 
 .footer-Menu li{
   float:left;
+  list-style-type:none;
  }
 
 .footer-Menu li a { 
   display:block;
   text-align: center;
-  padding: 10px 8px 10px 15px;
+  padding: 10px 8px ;
   text-decoration: none;
   font-family:Arial, Helvetica, sans-serif;
   font-size:18px;
@@ -125,115 +123,42 @@ footer{
 
 /*General elements*/
 h1{
-  text-align: Left;
   font-family:Lobster;
   font-size: 50px;
   color: #F9FAF4;
 }
 
+h2, h3,  p, .goals-list, #old-web, #hobbies-list{
+  font-family:Arial, Helvetica, sans-serif;
+}
 
 h2{
-  font-family:Arial, Helvetica, sans-serif;
   font-size: 22px;
   color:#F17A7E;
 }
 
 h3{
-  font-family:Arial, Helvetica, sans-serif;
   font-size: 20px;
   color:#FFC94B;
 }
 
-p{
-  font-family: Arial, Helvetica, sans-serif;
+p, .goals-list, #hobbies-list{
   font-size: 18px;
   color:rgb(14, 15, 78);
 }
-
-.thick-pic-border {
-  border-color:transparent;
-  border-width: 20px;
-  border-style:groove;
-  border-radius: 40px;
-  width: 400px;
-  height: auto;
-  grid-area: 1 / 1 ;
-} 
 
 /*Nav for Home Page */
 
 header.home {
   background-color: #F9FAF4;
-  width:100%;
-  height: 100px;
-  text-align:center;
-  position: fixed;
-  overflow: hidden;
-  width: 100%;
 }
-
-.grid-home-header {
-  display: grid;
-  grid-template-columns: auto;
-  grid-template-rows: auto auto;
-  padding:10px 10px 0px 0px;
-}
-
-.grid-home-header > div {
-  text-align: center;
-  font-size: 30px;
-}
-
-.nav-list2{
-  list-style-type:none;
-  background-color: #ddd8a6;
-  position: fixed;
-  overflow: auto;
-  width: 100%;
-  grid-area: 2/1/3/3;
- }
-
- .nav-list2 li{
-  float:left;
-  text-align: center;
- }
- 
-.nav-list2 li a { 
-  display:block;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-family:Arial, Helvetica, sans-serif;
-  font-weight: bold;
-  font-size:20px;
-  color:#F9FAF4;
-  border-top-left-radius: 15px;
-  border-top-right-radius: 15px;
-  margin-top: 5%;
-  width:110px;
-  height:20px;
-}
-
-.nav-list2 a:hover {
-  background-color: #f1f1ec;
-  color: #68a9af;
-  padding-bottom: 20% !important;
-}
-
-.active {
-  background-color:#F9FAF4;
-  color:#68a9af !important; 
-  padding-bottom: 20% !important;
-}
-
 
 h1.home{
     text-align: Center;
     font-family:Lobster;
     font-size: 50px;
     color: #68a9af;
-    padding-top:10px;
-    grid-area: 1/1/2/3;
+    padding:10px 0px 10px 0px;
 }
 
 /*home page*/ 
@@ -252,37 +177,33 @@ h1.home{
 .pic-border {
   width: 400px;
   height: auto;
+  border-radius: 10%;
+} 
+
+#me{
   grid-area: 1 / 1 /1/1;
-  border-radius: 10%;
-} 
+}
 
-.bamba {
-  width: 400px;
-  height: auto;
+#couple{
+  grid-area:1/3;
+}
+
+#bamba {
   grid-area: 2 / 1;
-  border-radius: 10%;
 } 
 
-.luna {
-  width: 400px;
-  height: auto;
+#luna {
   grid-area: 2/3;
-  border-radius: 10%;
 } 
 
 .Main-home-page {
   grid-area: 1 / 2 / 3 / 3 ;
   padding: 20px 10px 0px 10px;
-  
 }
 
 .goals-list {
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 18px;
-  color:rgb(14, 15, 78);
   list-style-type: none;
 }
-
 
 .social-media-grid {
   display: grid;
@@ -292,28 +213,29 @@ h1.home{
   grid-area: 3/2/3/2;
 }
 
+.social-media-grid > div {
+  text-align: center;
+  justify-items:  center;
+  align-items: center;
+}
+
 .title-social-media{
   grid-area: 1/1/1/3 ;
-  text-align: center;
 }
 
 .facebook{
   grid-area: 2 / 1  ;
-  justify-items:  center;
-  align-items: center;
 }
 
 .instagram{
   grid-area: 2 / 2  ;
-  justify-items:  center;
-  align-items: center;
 }
 
 .old-web{
   grid-area:3/3;
 }
+
 #old-web {
-   font-family: Arial, Helvetica, sans-serif;
    color:#68a9af;
    font-size: 18px;
    text-decoration: none;
@@ -331,6 +253,8 @@ h1.home{
 .grid-profile > div {
   text-align: center;
   font-size: 30px;
+  align-items: center;
+  justify-items: center;
 }
 
 .Main-grid-profile {
@@ -338,46 +262,39 @@ h1.home{
   padding:10px 10px 10px 10px;
 }
 
+#couple-pic,#army-pic, #hobbies-pic {
+  border-radius:10%;
+  width:400px; 
+  height:auto;
+}
+
+#family-pic, #cactus-pic, #nephews-pic{
+  border-radius: 10%;
+  width:auto;
+  height:300px;
+}
+
 .couple-pic {
   grid-area: 1 / 1 ;
 }
 
-#couple-pic {
-  width: 400px;
-  height: auto;
-  border-radius: 10%;
-} 
- 
 .family-pic{
   grid-area:3/3;
 }
 
-#family-pic {
-  border-radius: 10%;
-  width:auto;
-   height:300px;
-}
-
 .cactus-pic{
   grid-area:2/1;
-  align-items: center;
-  justify-items: center;
 }
 
 #cactus-pic {
-  border-radius: 10%;
-  width:auto;
-  height:300px;
   padding-top:100px;
 }
+
 .army-pic{
   grid-area:1/3;
 }
 
 #army-pic{
-  border-radius:10%;
-  width:400px; 
-  height:auto;
   padding-top:200px;
  }
 
@@ -386,31 +303,16 @@ h1.home{
   justify-items: center;
 }
 
-#nephews-pic{
-border-radius: 10%;
-width:auto;
-height:300px;
-}
-
 .hobbies-pic {
   grid-area:2/3;  
 }
 
-#hobbies-pic{
-  width: 400px;
-  height: auto;
-  border-radius: 10%;
-}
-
 .inner-grid-hobbies{
-display:grid;
-grid: 30% 60%;
+  display:grid;
+  grid: 30% 60%;
 }
 
 #hobbies-list {
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 18px;
-  color:rgb(14, 15, 78);
   grid-area:1/1/2/2;
   list-style-type: none;
 }
@@ -419,11 +321,14 @@ grid: 30% 60%;
   grid-area: 2/1/3/2;
 }
 
-
 /*Dashboard*/
 
 /* Progress Bar*/
 /* Ideas to add - automatically change color with javascript according to num of credits, maybe add animation or sliding bar*/
+
+#tabels{
+  padding: 20px 10% 0px 10%;
+}
 
 #credits {
   height:40px;
@@ -432,18 +337,18 @@ grid: 30% 60%;
   color: #000000;
 }
 
-#bar {
+#bar, #bar2{
   font-family:Arial, Helvetica, sans-serif;
   font-size: 22px;
-  color:#000000;
   padding: 1%;
 }
 
+#bar {
+  color:#000000;
+}
+
 #bar2 {
-  font-family:Arial, Helvetica, sans-serif;
-  font-size: 22px;
   color:#aa1515;
-  padding: 1%;
   float: right;
 }
 
@@ -453,48 +358,43 @@ border-radius: 10px;
 border:2px solid #FFC94B;
 }
 
-
-
-
 table.dashboard-table-quartile {
   border-collapse:collapse;
-  margin: 50px 0;
+  margin: 20px 0;
   box-shadow: 0 0 30px #F17A7E;
   border-radius: 25px;
   overflow:hidden;
   background-color: #F17A7E;
- width: 100%;
+  width: 100%;
 }
 
-
-.dashboard-table-quartile th,
-.dashboard-table-quartile td {
-    padding: 12px 20px;
-    width: 25% ;
+.dashboard-table-quartile thead tr, .dashboard-header-table{
+  text-align: Center;
+  font-family: Lobster;
+  color: #F9FAF4;
 }
 
 .dashboard-table-quartile thead tr {
   background-color: #FFC94B;
-  color: #F9FAF4;
-  text-align: Center;
-  font-size: 24px;
-  font-family: Lobster;
+  font-size: 22px;
 }
 
 .dashboard-header-table {
   background-color: #F17A7E;
-  font-size: 40px;
-  color:#F9FAF4;
+  font-size: 24px;
   font-weight: bold;
-  font-family: Lobster;
-  text-align: Center;
+}
+
+.dashboard-table-quartile td {
+  padding: 12px 20px;
+  width: 20% ;
 }
 
 .dashboard-table-quartile tbody td {
   background-color: #F9FAF4;
   color: #0a0a0a;
   text-align: Center;
-  font-size: 18px;
+  font-size: 15px;
   border-right: 1px solid #FFC94B;
   border-bottom: 1px solid #FFC94B;
   font-family: sans-serif;
@@ -502,7 +402,6 @@ table.dashboard-table-quartile {
 
 .not-graded {
   background-color: #dbdbd7 !important;
-  
 }
 .passed{
   background-color: #b1e2a0 !important;
@@ -515,137 +414,107 @@ table.dashboard-table-quartile {
 
 /* FAQ Page*/
 
-.summary{
-  font-family:Arial, Helvetica, sans-serif;
-  font-size: 22px;
-  text-align:center;
-  color:#F9FAF4;
-  background-color: #e4d5b2 ;
-  border-radius: 10%;
-  box-shadow: 0 0 30px #f1ddac;
-  height: 50px;
-  padding: 5% 5% 3% 5%;
-  font-weight: bold;
-}
-
-
-.p-summary {
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 18px;
-  color:rgb(14, 15, 78);
-  padding:1% 10% 5% 10%;
-  background-color: #F17A7E ;
-  border-radius: 10%;
-  box-shadow: 0 0 30px #FFC94B;
-  font-weight: lighter;
-}
-
-.p-summary2 {
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 18px;
-  color:rgb(14, 15, 78);
-  padding:1% 10% 5% 10%;
-  background-color: #a8e3f1 ;
-  border-radius: 10%;
-  box-shadow: 0 0 30px #FFC94B;
-  font-weight: lighter;
-}
-
-.p-summary3 {
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 18px;
-  color:rgb(14, 15, 78);
-  padding:1% 10% 5% 10%;
-  background-color: #FFC94B ;
-  border-radius: 10%;
-  box-shadow: 0 0 30px #FFC94B;
-  font-weight: lighter;
-}
-
 
 .grid-faq {
   display: grid;
-  grid-gap: 50px;
-  padding-top: 2%;
+  column-gap: 10px;
 }
 
 .grid-faq > div {
   text-align: center;
   font-size: 30px;
-  grid-template-columns: auto auto  ;
-  grid-template-rows: 200px 200px 200px 200px 200px;
+  grid-template-columns: 20% 60% 20%  ;
+  grid-template-rows: 50px 50px 50px 50px 50px;
+  align-items: center;
+  justify-items: center;
 }
 
-.q1-faq {
-  grid-area: 1 / 1 ;
+#all-q{
+padding-top:5%;
+grid-area: 1/2/6/2;
 }
 
-.q2-faq {
-  grid-area: 2 / 2 ;
+details{
+  box-shadow: 0 0 30px #f1ddac;
+  font-size: 22px;
+  text-align:center;
+  color:#F9FAF4;
+  background-color: #e4d5b2 ;
+  font-weight: bold;
+  cursor: pointer;
+  margin-bottom: 2rem;
+  padding: .5rem 1rem;
 }
 
-.q3-faq {
-  grid-area: 3 / 1 ;
+summary {
+  cursor: pointer;
 }
 
-.q4-faq {
-  grid-area: 4 / 2 ;
+.p-summary, .p-summary2, .p-summary3, details{
+  font-family:Arial, Helvetica, sans-serif;
+  border-radius: 10%;
 }
 
-.q5-faq {
-  grid-area: 5 / 1 ;
-}
- 
-.apple-pic {
-  grid-area:1/2;  
+.p-summary, .p-summary2, .p-summary3{
+  font-size: 18px;
+  color:rgb(14, 15, 78);
+  padding:1% 10% 1% 10%;
+  font-weight: lighter;
+  box-shadow: 0 0 30px #FFC94B;
 }
 
-#apple-pic{
-  width: 200px;
+.p-summary {
+  background-color: #F17A7E ;
+}
+
+.p-summary2 {
+  background-color: #a8e3f1 ;
+}
+
+.p-summary3 {
+  background-color: #FFC94B ;
+}
+
+#apple-pic, #pineapple-pic,#orange-pic,#peach-pic,#strawberry-pic,#pear-pic{
   height: auto;
   border-radius: 10%;
+}
+
+#pineapple-pic, #orange-pic,#strawberry-pic,#apple-pic{
+  width: 200px;
+}
+
+.apple-pic {
+  grid-area:1/1;  
 }
 
 .pineapple-pic {
-  grid-area:2/1;  
-}
-
-#pineapple-pic{
-  width: 200px;
-  height: auto;
-  border-radius: 10%;
+  grid-area:1/3;  
 }
 
 .orange-pic {
-  grid-area:3/2;  
+  grid-area:3/1; 
 }
 
-#orange-pic{
-  width: 200px;
-  height: auto;
-  border-radius: 10%;
+.peach-pic {
+  grid-area:3/3;  
 }
 
-.pear-pic {
-  grid-area:4/1;  
-}
-
-#pear-pic{
-  width: 150px;
-  height: auto;
-  border-radius: 10%;
+#peach-pic{
+  width: 300px;
 }
 
 .strawberry-pic {
-  grid-area:5/2;  
+  grid-area:5/1;  
 }
 
-#strawberry-pic{
-  width: 200px;
-  height: auto;
-  border-radius: 10%;
+.pear-pic {
+  grid-area:5/3;  
 }
 
+#pear-pic{
+  width: 120px;
+}
 
 
 /* Blog Area  */
@@ -657,63 +526,49 @@ h1.blog {
   color:rgb(238, 238, 234)
 }
 
-h2.blog {
+h2.blog, h3.blog, .read-me{
   font-family:Arial, Helvetica, sans-serif;
-  font-size: 22px;
   color:#080806;
+}
+
+h2.blog {
+  font-size: 22px;
   background-color: #f7eeda;
   border-radius: 10px;
   margin-top:2%;
   text-align: center;
   font-weight: lighter;
-  
 }
 
 h3.blog {
-  font-family:Arial, Helvetica, sans-serif;
   font-size: 20px;
-  color:rgb(13, 32, 51)
+}
+
+p.blog-pos1,p.blog-pos2,p.blog-pos3{
+  font-family:Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  color:rgb(14, 15, 78);
+  padding:20px;
+  border-bottom: 2px groove #2f4044;
+  text-align: left;
+  border-radius: 10px;
 }
 
 p.blog-pos1 {
-  font-family:Arial, Helvetica, sans-serif;
-  font-size: 18px;
-  color:rgb(14, 15, 78);
-  padding:20px;
-  border-bottom: 2px groove #2f4044;
   background-color: #a8e3f1;
-  text-align: left;
-  border-radius: 10px;
 }
 
 p.blog-pos2 {
-  font-family:Arial, Helvetica, sans-serif;
-  font-size: 18px;
-  color:rgb(14, 15, 78);
-  padding:20px;
-  border-bottom: 2px groove #2f4044;
   background-color: #F17A7E;
-  text-align: left;
-  border-radius: 10px;
 }
 
 p.blog-pos3 {
-  font-family:Arial, Helvetica, sans-serif;
-  font-size: 18px;
-  color:rgb(14, 15, 78);
-  padding:20px;
-  border-bottom: 2px groove #2f4044;
   background-color: #FFC94B;
-  text-align: left;
-  border-radius: 10px;
 }
 
 .read-me {
-  font-family:Arial, Helvetica, sans-serif;
   font-size: 18px;
-  color:#345558;
 }
-
 
 
 /*Posts*/
@@ -756,7 +611,6 @@ h1.blog-post{
   color:rgb(238, 238, 234);
 }
 
-
 h2.blog-post{
   font-family:Arial, Helvetica, sans-serif;
   font-size: 22px;
@@ -783,7 +637,6 @@ p.blog-post {
   margin:auto;
   margin-left:2%;
 }
-
 
 
 /* ICT-Field of Work Blog Post*/
@@ -835,4 +688,3 @@ p.blog-post {
   padding-right: 20%;
   padding-bottom: 20%;
   }
-
