@@ -17,7 +17,7 @@ header {
 
 .grid-Header {
   display: grid;
-  grid-template-columns: 90% 10%;
+  grid-template-columns: 10% 80% 10%;
   grid-template-rows: auto auto;
 }
 
@@ -25,14 +25,27 @@ header {
   font-size: 30px;
 }
 
+.p-h1{
+  grid-area:1/2;
+}
+
 .hz-logo{
-  grid-area: 1/2 ;
+  grid-area: 1/3 ;
 }
 
 #hz-logo{
   height: 60px;
   width: auto;
   padding:5px 10px ;
+}
+
+.my-logo{
+  grid-area: 1/1;
+}
+
+#my-logo{
+  height: 60px;
+  width: auto;
 }
 
 .nav-list{
@@ -161,6 +174,7 @@ h1.home{
     padding:10px 0px 10px 0px;
 }
 
+
 /*home page*/ 
 .grid-home-page {
   display: grid;
@@ -221,6 +235,11 @@ h1.home{
 
 .title-social-media{
   grid-area: 1/1/1/3 ;
+}
+
+#facebook,#instagram{
+  width:50px; 
+  height:50px;
 }
 
 .facebook{
@@ -538,6 +557,8 @@ h2.blog {
   margin-top:2%;
   text-align: center;
   font-weight: lighter;
+  width: 62%;
+  margin:1% 30% 0 20%;
 }
 
 h3.blog {
@@ -550,8 +571,10 @@ p.blog-pos1,p.blog-pos2,p.blog-pos3{
   color:rgb(14, 15, 78);
   padding:20px;
   border-bottom: 2px groove #2f4044;
-  text-align: left;
+  text-align: center;
   border-radius: 10px;
+  width:60%;
+  margin:0 20% 0 20%;
 }
 
 p.blog-pos1 {
@@ -572,69 +595,31 @@ p.blog-pos3 {
 
 
 /*Posts*/
- #post-header{
-  background-color: #68a9af;
-  width:100%;
-  height: 100px;
-  text-align:center;
-  position: fixed;
-  overflow: hidden;
 
- }
-
-.grid-Header-posts {
-  display: grid;
-  grid-template-columns: 90% 10%;
-  grid-gap: 10px;
-  padding:10px 10px 0px 20px;
+h2.blog-post,h3.blog-post,p.blog-post, .blog-post li{
+  font-family:Arial, Helvetica, sans-serif;
 }
 
-.grid-Header-posts > div {
-  text-align: center;
-  font-size: 30px;
-}
-
-.hz-logo2{
-  grid-area: 1/2 ;
-}
-
-#hz-logo2{
-  height: 80px;
-  width: auto;
-  padding:5px 10px 0px 10px ;
-}
-
-h1.blog-post{
-  text-align: left;
-  font-family:Lobster;
-  font-size: 50px;
-  color:rgb(238, 238, 234);
+p.blog-post,.blog-post li {
+  color:rgb(13, 32, 51);
+  margin:auto;
 }
 
 h2.blog-post{
-  font-family:Arial, Helvetica, sans-serif;
   font-size: 22px;
   color:#F17A7E;
 }
 
 h3.blog-post{
-  font-family:Arial, Helvetica, sans-serif;
   font-size: 20px;
-  color:rgb(13, 32, 51)
 }
 
 p.blog-post {
-  font-family:Arial, Helvetica, sans-serif;
   font-size: 18px;
-  color:rgb(14, 15, 78);
-  margin:auto;
 }
 
 .blog-post li{
-  font-family:Arial, Helvetica, sans-serif;
   font-size: 18px;
-  color:rgb(14, 15, 78);
-  margin:auto;
   margin-left:2%;
 }
 
@@ -661,8 +646,7 @@ p.blog-post {
 
 .hackerone-poster-pos:hover{
   transform: scale(2);
-  padding-left: 20%;
-  padding-top: 20%;
+  padding:20% 0 0 20%;
   }
   
 .grid-ict2 {
@@ -685,6 +669,5 @@ p.blog-post {
 
 .atos-poster-pos:hover{
   transform: scale(2);
-  padding-right: 20%;
-  padding-bottom: 20%;
+  padding:0 20% 20% 0;
   }
