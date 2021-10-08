@@ -2,10 +2,9 @@
   margin: 0px;
   padding:0px;
 }
-
-
-/*Header and navigation*/
-
+/*-------------------------------------------Areas in the webpages (header, body, footer)-------------------------------------------------- */
+/*---------------------------------------------------Header and navigation------------------------------------------------------------------*/
+/*=========================================================Header===========================================================================*/
 header {
   background-color: #68a9af;
   width:100%;
@@ -13,6 +12,10 @@ header {
   position: fixed;
   overflow: hidden;
   padding:10px 10px 0px 0px;
+}
+
+header.home {
+  background-color: #F9FAF4;
 }
 
 .grid-Header {
@@ -25,29 +28,23 @@ header {
   font-size: 30px;
 }
 
-.p-h1{
-  grid-area:1/2;
+#my-logo,#hz-logo{
+  height: 60px;
+  width: auto;
+}
+
+#hz-logo{
+  padding:5px 10px ;
 }
 
 .hz-logo{
   grid-area: 1/3 ;
 }
 
-#hz-logo{
-  height: 60px;
-  width: auto;
-  padding:5px 10px ;
-}
-
 .my-logo{
   grid-area: 1/1;
 }
-
-#my-logo{
-  height: 60px;
-  width: auto;
-}
-
+/*============================================================Navigation==================================================================*/
 .nav-list{
   list-style-type:none;
   background-color: #ddd8a6;
@@ -62,14 +59,13 @@ header {
  }
  
 .nav-list li a { 
+  font-size:20px;
+  color:#F9FAF4;
   display:block;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
-  font-family:Arial, Helvetica, sans-serif;
   font-weight: bold;
-  font-size:20px;
-  color:#F9FAF4;
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
   margin-top: 5%;
@@ -79,18 +75,18 @@ header {
 
 .nav-list a:hover {
   background-color: #f1f1ec;
-  color: #68a9af;
-  padding-bottom: 20% !important;
+}
+.active{
+  background-color:#F9FAF4;
 }
 
-.active {
-  background-color:#F9FAF4;
+.active, .nav-list a:hover {
   color:#68a9af !important; 
   padding-bottom: 20% !important;
 }
 
 
-/*center of page*/
+/*-------------------------------------------------------------Center of Page-------------------------------------------------------------*/
 
 body{
   background-color:#F9FAF4;
@@ -102,7 +98,7 @@ main{
   padding:11% 2% 2.5rem 2%;
 }
 
-/*footer area*/
+/*--------------------------------------------------------------Footer Area---------------------------------------------------------------*/
 
 footer{
   width: 100%;
@@ -117,13 +113,12 @@ footer{
  }
 
 .footer-Menu li a { 
+  font-size:18px;
+  color: #F9FAF4;
   display:block;
   text-align: center;
   padding: 10px 8px ;
   text-decoration: none;
-  font-family:Arial, Helvetica, sans-serif;
-  font-size:18px;
-  color: #F9FAF4;
   font-weight: bold;
 }
 
@@ -132,17 +127,22 @@ footer{
   color: #68a9af;
 }
 
+/*--------------------------------------------------Text and Color for The rest of the elements-------------------------------------------------*/
 
-
-/*General elements*/
+/*=========================================================Everything in Ariel font=========================================================*/
+h2, h3, p, .nav-list li a, .footer-Menu li a, .goals-list, #old-web, #hobbies-list, #bar, #warning,details, .blog-post li{
+  font-family:Arial, Helvetica, sans-serif;
+}
+/*=================================================================Headers=================================================================*/
 h1{
   font-family:Lobster;
   font-size: 50px;
   color: #F9FAF4;
 }
 
-h2, h3,  p, .goals-list, #old-web, #hobbies-list{
-  font-family:Arial, Helvetica, sans-serif;
+h1.home{
+  color: #68a9af;
+  padding:10px 0px 10px 0px;
 }
 
 h2{
@@ -150,32 +150,172 @@ h2{
   color:#F17A7E;
 }
 
+h2.blog {
+  color:#080806;
+}
+
 h3{
   font-size: 20px;
   color:#FFC94B;
 }
-
-p, .goals-list, #hobbies-list{
+/*======================================================Text for Paragraphs, lists================================================*/
+p, .p-summary, .p-summary2, .p-summary3, .goals-list, #hobbies-list, .blog-post li, .read-me{
   font-size: 18px;
   color:rgb(14, 15, 78);
 }
 
-/*Nav for Home Page */
-
-header.home {
-  background-color: #F9FAF4;
+/*======================================================Text for home page (link to pic)================================================*/
+#old-web {
+  color:#68a9af;
+  font-size: 18px;
+  text-decoration: none;
 }
 
-h1.home{
+/*========================================================Text for dashboard=============================================================*/
+ /*==========================================================Bars + text=================================================================*/
+#bar, #warning{
+  font-size: 22px;
+  padding: 1%;
+}
+
+#bar {
+  color:rgb(14, 15, 78);;
+}
+
+#warning {
+  color:#aa1515;
+  float: right;
+}
+
+.prog-bar {
+  background-color: #f3ecb1;
+  border-radius: 10px;
+  border:2px solid #FFC94B;
+  }
+  
+  /*=========================================================Tables settings============================================================*/
+  table.dashboard-table-quartile {
+    border-collapse:collapse;
+    margin: 20px 0;
+    box-shadow: 0 0 30px #F17A7E;
+    border-radius: 25px;
+    overflow:hidden;
+    background-color: #F17A7E;
+    width: 100%;
+  }
+  
+  .dashboard-table-quartile thead tr, .dashboard-header-table{
     text-align: Center;
-    font-family:Lobster;
-    font-size: 50px;
-    color: #68a9af;
-    padding:10px 0px 10px 0px;
+    font-family: Lobster;
+    color: #F9FAF4;
+  }
+  
+  .dashboard-table-quartile thead tr {
+    background-color: #FFC94B;
+    font-size: 22px;
+  }
+  
+  .dashboard-header-table {
+    background-color: #F17A7E;
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .dashboard-table-quartile td {
+    padding: 12px 20px;
+    width: 20% ;
+  }
+  
+  .dashboard-table-quartile tbody td {
+    background-color: #F9FAF4;
+    color: #0a0a0a;
+    text-align: Center;
+    font-size: 15px;
+    border-right: 1px solid #FFC94B;
+    border-bottom: 1px solid #FFC94B;
+    font-family: sans-serif;
+  }
+  
+  .not-graded {
+    background-color: #dbdbd7 !important;
+  }
+  .passed{
+    background-color: #b1e2a0 !important;
+  }
+  .failed{
+    background-color: #ec5752 !important;
+  }
+
+ /*=========================================================Text for FAQ================================================================ */
+ details,.p-summary, .p-summary2, .p-summary3{
+  border-radius: 10%;
+ }
+
+ details{
+  font-size: 22px;
+  color:#F9FAF4;
+  text-align:center;
+  box-shadow: 0 0 30px #f1ddac;
+  background-color: #e4d5b2 ;
+  font-weight: bold;
+  cursor:default;
+  margin-bottom: 2rem;
+  padding: .5rem 1rem;
 }
 
+.p-summary, .p-summary2, .p-summary3{
+  padding:1% 10% 1% 10%;
+  font-weight: lighter;
+  box-shadow: 0 0 30px #FFC94B;
+}
 
-/*home page*/ 
+.p-summary {
+  background-color: #F17A7E ;
+}
+
+.p-summary2 {
+  background-color: #a8e3f1 ;
+}
+
+.p-summary3 {
+  background-color: #FFC94B ;
+}
+
+/*========================================================Text for Blog================================================================= */
+h2.blog,p.blog-pos1,p.blog-pos2,p.blog-pos3{
+  border-radius: 10px;
+  text-align: center;
+}
+
+h2.blog {
+  background-color: #f7eeda;
+  margin-top:2%;
+  font-weight: lighter;
+  width: 62%;
+  margin:1% 30% 0 20%;
+}
+
+p.blog-pos1,p.blog-pos2,p.blog-pos3{
+  padding:20px;
+  border-bottom: 2px groove #2f4044;
+  width:60%;
+  margin:0 20% 0 20%;
+}
+
+p.blog-pos1 {
+  background-color: #a8e3f1;
+}
+
+p.blog-pos2 {
+  background-color: #F17A7E;
+}
+
+p.blog-pos3 {
+  background-color: #FFC94B;
+}
+
+/*------------------------------------------------Grids and pictures (divided by page)----------------------------------------------------------*/
+/*--------------------------------------------------------home page-----------------------------------------------------------------------------*/ 
 .grid-home-page {
   display: grid;
   grid-template-columns: auto 45% auto ;
@@ -254,19 +394,11 @@ h1.home{
   grid-area:3/3;
 }
 
-#old-web {
-   color:#68a9af;
-   font-size: 18px;
-   text-decoration: none;
-}
-
-
-/*Profile Page*/
+/*--------------------------------------------------------Profile Page-------------------------------------------------------------------------*/
 
 .grid-profile {
   display: grid;
-  grid-template-columns: auto 45% auto ;
-  grid-template-rows: auto auto auto auto;
+  grid-template-columns: auto 45% auto;
 }
 
 .grid-profile > div {
@@ -340,11 +472,7 @@ h1.home{
   grid-area: 2/1/3/2;
 }
 
-/*Dashboard*/
-
-/* Progress Bar*/
-/* Ideas to add - automatically change color with javascript according to num of credits, maybe add animation or sliding bar*/
-
+/*--------------------------------------------------------Dashboard page------------------------------------------------------------------------*/
 #tabels{
   padding: 20px 10% 0px 10%;
 }
@@ -352,97 +480,19 @@ h1.home{
 #credits {
   height:40px;
   width: 1000px;
-  text-align: center;
-  color: #000000;
 }
 
-#bar, #bar2{
-  font-family:Arial, Helvetica, sans-serif;
-  font-size: 22px;
-  padding: 1%;
-}
-
-#bar {
-  color:#000000;
-}
-
-#bar2 {
-  color:#aa1515;
-  float: right;
-}
-
-.prog-bar {
-background-color: #f3ecb1;
-border-radius: 10px;
-border:2px solid #FFC94B;
-}
-
-table.dashboard-table-quartile {
-  border-collapse:collapse;
-  margin: 20px 0;
-  box-shadow: 0 0 30px #F17A7E;
-  border-radius: 25px;
-  overflow:hidden;
-  background-color: #F17A7E;
-  width: 100%;
-}
-
-.dashboard-table-quartile thead tr, .dashboard-header-table{
-  text-align: Center;
-  font-family: Lobster;
-  color: #F9FAF4;
-}
-
-.dashboard-table-quartile thead tr {
-  background-color: #FFC94B;
-  font-size: 22px;
-}
-
-.dashboard-header-table {
-  background-color: #F17A7E;
-  font-size: 24px;
-  font-weight: bold;
-}
-
-.dashboard-table-quartile td {
-  padding: 12px 20px;
-  width: 20% ;
-}
-
-.dashboard-table-quartile tbody td {
-  background-color: #F9FAF4;
-  color: #0a0a0a;
-  text-align: Center;
-  font-size: 15px;
-  border-right: 1px solid #FFC94B;
-  border-bottom: 1px solid #FFC94B;
-  font-family: sans-serif;
-}
-
-.not-graded {
-  background-color: #dbdbd7 !important;
-}
-.passed{
-  background-color: #b1e2a0 !important;
-}
-
-.failed{
-  background-color: #ec5752 !important;
-}
-
-
-/* FAQ Page*/
-
-
+/*--------------------------------------------------------FAQ page-----------------------------------------------------------------------------*/
 .grid-faq {
   display: grid;
   column-gap: 10px;
+  padding:0 0 0 5%;
 }
 
 .grid-faq > div {
   text-align: center;
   font-size: 30px;
-  grid-template-columns: 20% 60% 20%  ;
+  grid-template-columns: 30% 40% 30%  ;
   grid-template-rows: 50px 50px 50px 50px 50px;
   align-items: center;
   justify-items: center;
@@ -453,45 +503,8 @@ padding-top:5%;
 grid-area: 1/2/6/2;
 }
 
-details{
-  box-shadow: 0 0 30px #f1ddac;
-  font-size: 22px;
-  text-align:center;
-  color:#F9FAF4;
-  background-color: #e4d5b2 ;
-  font-weight: bold;
-  cursor: pointer;
-  margin-bottom: 2rem;
-  padding: .5rem 1rem;
-}
-
 summary {
   cursor: pointer;
-}
-
-.p-summary, .p-summary2, .p-summary3, details{
-  font-family:Arial, Helvetica, sans-serif;
-  border-radius: 10%;
-}
-
-.p-summary, .p-summary2, .p-summary3{
-  font-size: 18px;
-  color:rgb(14, 15, 78);
-  padding:1% 10% 1% 10%;
-  font-weight: lighter;
-  box-shadow: 0 0 30px #FFC94B;
-}
-
-.p-summary {
-  background-color: #F17A7E ;
-}
-
-.p-summary2 {
-  background-color: #a8e3f1 ;
-}
-
-.p-summary3 {
-  background-color: #FFC94B ;
 }
 
 #apple-pic, #pineapple-pic,#orange-pic,#peach-pic,#strawberry-pic,#pear-pic{
@@ -534,108 +547,27 @@ summary {
 #pear-pic{
   width: 120px;
 }
+/*--------------------------------------------------------Blog post page------------------------------------------------------------------------*/
+/* -------------------------------------------------ICT-Field of Work Blog Post----------------------------------------------------------------*/
 
-
-/* Blog Area  */
-
-h1.blog {
-  text-align: left;
-  font-family:Lobster;
-  font-size: 50px;
-  color:rgb(238, 238, 234)
-}
-
-h2.blog, h3.blog, .read-me{
-  font-family:Arial, Helvetica, sans-serif;
-  color:#080806;
-}
-
-h2.blog {
-  font-size: 22px;
-  background-color: #f7eeda;
-  border-radius: 10px;
-  margin-top:2%;
-  text-align: center;
-  font-weight: lighter;
-  width: 62%;
-  margin:1% 30% 0 20%;
-}
-
-h3.blog {
-  font-size: 20px;
-}
-
-p.blog-pos1,p.blog-pos2,p.blog-pos3{
-  font-family:Arial, Helvetica, sans-serif;
-  font-size: 18px;
-  color:rgb(14, 15, 78);
-  padding:20px;
-  border-bottom: 2px groove #2f4044;
-  text-align: center;
-  border-radius: 10px;
-  width:60%;
-  margin:0 20% 0 20%;
-}
-
-p.blog-pos1 {
-  background-color: #a8e3f1;
-}
-
-p.blog-pos2 {
-  background-color: #F17A7E;
-}
-
-p.blog-pos3 {
-  background-color: #FFC94B;
-}
-
-.read-me {
-  font-size: 18px;
-}
-
-
-/*Posts*/
-
-h2.blog-post,h3.blog-post,p.blog-post, .blog-post li{
-  font-family:Arial, Helvetica, sans-serif;
-}
-
-p.blog-post,.blog-post li {
-  color:rgb(13, 32, 51);
-  margin:auto;
-}
-
-h2.blog-post{
-  font-size: 22px;
-  color:#F17A7E;
-}
-
-h3.blog-post{
-  font-size: 20px;
-}
-
-p.blog-post {
-  font-size: 18px;
-}
-
-.blog-post li{
-  font-size: 18px;
-  margin-left:2%;
-}
-
-
-/* ICT-Field of Work Blog Post*/
-
-.grid-ict {
+.grid-ict, .grid-ict2 {
   display: grid;
-  grid-template-columns: 25% 20% 55%;
   grid-gap: 30px;
   padding:10px;
 }
 
-.grid-ict > div {
+.grid-ict > div, .grid-ict2 > div {
   text-align: left;
 }
+
+.grid-ict{
+  grid-template-columns: 25% 20% 55%;
+}
+
+.grid-ict2 {
+  grid-template-columns: 55% 20% 25%;
+}
+
 .hackerone-pos{
   grid-area: 1 / 3;
 }
@@ -644,30 +576,21 @@ p.blog-post {
   grid-area: 1 / 1 ;
 }
 
-.hackerone-poster-pos:hover{
-  transform: scale(2);
-  padding:20% 0 0 20%;
+  .hackerone-poster-pos:hover, .atos-poster-pos:hover{
+    transform: scale(2);
+  }
+  .hackerone-poster-pos:hover{
+    padding:20% 0 0 20%;
+    }
+    
+  .atos-pos{
+    grid-area: 1 / 1;
   }
   
-.grid-ict2 {
-  display: grid;
-  grid-template-columns: 55% 20% 25%;
-  grid-gap: 30px;
-  padding:10px;
-}
-
-.grid-ict2 > div {
-  text-align: left;
-}
-.atos-pos{
-  grid-area: 1 / 1;
-}
-
-.atos-poster-pos{
-  grid-area: 1 / 3 ;
-}
-
-.atos-poster-pos:hover{
-  transform: scale(2);
-  padding:0 20% 20% 0;
+  .atos-poster-pos{
+    grid-area: 1 / 3 ;
   }
+  
+  .atos-poster-pos:hover{
+    padding:0 20% 20% 0;
+    }
