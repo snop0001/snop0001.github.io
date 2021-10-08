@@ -61,6 +61,7 @@ header.home {
 .nav-list li a { 
   font-size:20px;
   color:#F9FAF4;
+  overflow: hidden;
   display:block;
   text-align: center;
   padding: 14px 16px;
@@ -90,12 +91,17 @@ header.home {
 
 body{
   background-color:#F9FAF4;
-  position: relative;
+  position:relative; 
   min-height: 100vh;
 }
 
 main{
   padding:11% 2% 2.5rem 2%;
+}
+
+.main-ict-blog{
+ margin-left: 10%;
+ margin-right: 10%;
 }
 
 /*--------------------------------------------------------------Footer Area---------------------------------------------------------------*/
@@ -105,15 +111,17 @@ footer{
   background-color: #68a9af;
   position:absolute; 
   bottom: 0;
+  
 }
 
 .footer-Menu li{
   float:left;
   list-style-type:none;
+  overflow: hidden;
  }
 
 .footer-Menu li a { 
-  font-size:18px;
+  font-size:16px;
   color: #F9FAF4;
   display:block;
   text-align: center;
@@ -314,11 +322,16 @@ p.blog-pos3 {
   background-color: #FFC94B;
 }
 
+.blog-article{
+  margin-left: 25%;
+  margin-right:25%;;
+}
+
 /*------------------------------------------------Grids and pictures (divided by page)----------------------------------------------------------*/
 /*--------------------------------------------------------home page-----------------------------------------------------------------------------*/ 
 .grid-home-page {
   display: grid;
-  grid-template-columns: auto 45% auto ;
+  grid-template-columns: auto auto auto ;
   grid-gap: 5px ; 
 }
 
@@ -398,7 +411,7 @@ p.blog-pos3 {
 
 .grid-profile {
   display: grid;
-  grid-template-columns: auto 45% auto;
+  grid-template-columns: auto auto auto;
 }
 
 .grid-profile > div {
